@@ -1,0 +1,12 @@
+# Interactive shell: initialization for command-line tool scripts and env variables
+
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="/opt/homebrew/share/john:$PATH"
+
+# SDKMAN!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# OrbStack
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :

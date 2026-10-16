@@ -1,0 +1,44 @@
+# Load command-line tools for interactive shell
+
+# Deafult setting
+export CLICOLOR=1
+export LSCOLORS=ExGxFxdaCxDaDahbadeche
+PROMPT="%{$fg_bold[cyan]%}%n%{$reset_color%}@%{$fg_bold[cyan]%}%m %{$fg_bold[green]%}%1~ %{$reset_color%}%# "
+set -o vi
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
+
+# Starship
+eval "$(starship init zsh)"
+
+# Autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Syntax Highlighting
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Eza (better ls)
+alias ls="eza --icons=auto"
+
+# Zoxide (better cd)
+eval "$(zoxide init zsh --cmd cd)"
+
+# Love2D
+alias love="/Applications/love.app/Contents/MacOS/love"
+
+# fzf: key bindings and fuzzy completion
+source <(fzf --zsh)
+
+# yazi: shell wrapper
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	command rm -f -- "$tmp"
+}
+
+# fnm
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+# mise
+eval "$(mise activate zsh)"
