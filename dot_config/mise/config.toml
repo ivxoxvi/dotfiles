@@ -1,0 +1,8 @@
+[tools]
+foundry = "latest"
+go = "latest"
+java = "lts"
+node = "lts"
+pnpm = "latest"
+rust = "latest"
+uv = "latest"

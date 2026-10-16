@@ -37,8 +37,5 @@ function y() {
 	command rm -f -- "$tmp"
 }
 
-# fnm
-eval "$(fnm env --use-on-cd --shell zsh)"
-
 # mise
 eval "$(mise activate zsh)"
