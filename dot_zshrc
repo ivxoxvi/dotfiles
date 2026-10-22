@@ -1,5 +1,6 @@
 # Load command-line tools for interactive shell
 
+
 # Deafult setting
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdaCxDaDahbadeche
@@ -9,12 +10,6 @@ zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 
 # Starship
 eval "$(starship init zsh)"
-
-# Autosuggestions
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Syntax Highlighting
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Eza (better ls)
 alias ls="eza --icons=auto"
@@ -39,3 +34,9 @@ function y() {
 
 # mise
 eval "$(mise activate zsh)"
+
+# Autosuggestions
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Syntax Highlighting
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

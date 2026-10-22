@@ -2,7 +2,7 @@
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
-export PATH="/opt/homebrew/share/john:$PATH"
+export PATH="$PATH:/opt/homebrew/share/john"
 
 # OrbStack
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
