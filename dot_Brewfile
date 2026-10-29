@@ -1,0 +1,93 @@
+tap "daipeihust/tap", trusted: true
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Statistics utility to count lines of code
+brew "cloc"
+# More intuitive version of du in rust
+brew "dust"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Render markdown on the CLI
+brew "glow"
+# Enhanced version of john, a UNIX password cracker
+brew "john-jumbo"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Handy way to save and run project-specific commands
+brew "just"
+# Powerful, lightweight programming language
+brew "lua"
+# Unified display of technical and tag data for audio/video
+brew "media-info"
+# Run a Kubernetes cluster locally
+brew "minikube"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Deep clean and optimize your Mac
+brew "mole"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Port scanning utility for large networks
+brew "nmap"
+# General-purpose speech recognition model
+brew "openai-whisper"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Telegram Messenger downloader/tools written in Golang
+brew "telegram-downloader"
+# Official tldr client written in Rust
+brew "tlrc"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Internet file retriever
+brew "wget"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Switch your input method through terminal
+brew "daipeihust/tap/im-select"
+# E-books management software
+cask "calibre"
+cask "font-lxgw-wenkai"
+cask "font-maple-mono-nf-cn"
+cask "font-merriweather"
+cask "font-merriweather-sans"
+# Intercept, modify, replay, save HTTP/S traffic
+cask "mitmproxy"
+# Comic reader
+cask "yacreader"
+vscode "alefragnani.project-manager"
+vscode "redhat.vscode-xml"
+vscode "ryu1kn.partial-diff"
+vscode "vscodevim.vim"
+go "cmd/go"
+go "cmd/gofmt"
+uv "ipython"
+npm "corepack"
