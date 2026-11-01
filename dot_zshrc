@@ -12,10 +12,7 @@ zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 eval "$(starship init zsh)"
 
 # Eza (better ls)
-alias ls="eza --icons --group-directories-first"
-alias ll="eza -l --icons --group-directories-first"
-alias la="eza -la --icons --group-directories-first"
-alias lt="eza --tree --icons"
+alias ls="eza --icons=auto"
 
 # Zoxide (better cd)
 eval "$(zoxide init zsh --cmd cd)"

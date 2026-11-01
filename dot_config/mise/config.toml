@@ -1,8 +1,13 @@
 [tools]
-foundry = "latest"
-go = "latest"
-java = "lts"
 node = "lts"
 pnpm = "latest"
+
+go = "latest"
+
+java = "lts"
+
 rust = "latest"
+
 uv = "latest"
+
+foundry = "latest"
