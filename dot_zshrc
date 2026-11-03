@@ -41,6 +41,7 @@ eval "$(mise activate zsh)"
 
 # Autosuggestions
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^ ' autosuggest-accept
 
 # Syntax Highlighting
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
