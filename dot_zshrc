@@ -7,6 +7,10 @@ export LSCOLORS=ExGxFxdaCxDaDahbadeche
 PROMPT="%{$fg_bold[cyan]%}%n%{$reset_color%}@%{$fg_bold[cyan]%}%m %{$fg_bold[green]%}%1~ %{$reset_color%}%# "
 bindkey -v
 export KEYTIMEOUT=15
+
+# Auto Comp
+autoload -Uz compinit
+compinit -u
 zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 
 # Starship
@@ -22,7 +26,7 @@ alias lt="eza --tree --icons"
 eval "$(zoxide init zsh)"
 
 # Love2D
-alias love="/Applications/love.app/Contents/MacOS/love":
+alias love="/Applications/love.app/Contents/MacOS/love"
 
 # fzf: key bindings and fuzzy completion
 source <(fzf --zsh)
